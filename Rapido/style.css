@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    width: 100vw;
+}
+header{
+    background-color:rgb(255, 255, 255);
+    border-bottom: 1px solid white;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.1);
+    width: 100vw;
+}
+.navbar{
+    display: flex;
+    gap: 0px;
+    align-items: center;
+    padding: 10px 30px;
+    width: 100%;
+    justify-content: space-between;
+}
+.nav-links{
+    display: flex;
+    gap: 20px;
+    margin-right: 10%;
+
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.nav-links li a:hover{
+    color: rgb(118, 113, 113);
+    /* font-weight: 600; */
+}
+
+#logo{
+    width: 80%;
+}
+#menu{
+    display: none;
+}
+
+
+
+
+.map{
+    background-image: url('./assets/backgrond\ for\ main\ contaomer.png');
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    padding-bottom: 100px;
+    flex-direction: column;
+    
+}
+.map-header h1{
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 600;
+    /* color: white; */
+    margin-top: 20px;
+      margin-bottom: 40px;
+}
+
+.map-input form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+form input{
+    padding: 25px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 50%;
+  
+    margin-left: auto;
+    margin-right: auto;
+}
+form input[type="submit"]{
+    background-color: rgb(255, 188, 2);
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    font-weight:bold;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.vehiclas-container{
+    padding: 100px;
+}
+.vehicals-subconatiner{
+    padding: 10px;
+    display: flex;
+   
+    gap: 10%;
+    flex-wrap: wrap;
+}
+.vehiclas{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+
+
+
+.get-rides{
+    background-color: rgb(241, 241, 241);
+    width: 100%;
+}
+.sub-first-container-get-rides{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    /* align-items: center; */
+}
+aside{
+    display: flex;
+
+    flex-direction: column;
+    gap: 50px;
+}
+/* @media all and (max-width: 1000px){
+.vehicals-subconatiner{
+    flex-wrap: nowrap;
+} */
+/* } */
+.button{
+    background-color: rgb(255, 188, 2);
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    font-weight:bold;
+    cursor: pointer;
+    padding: 50px;
+    border-radius: 5px;
+    /* border: none; */
+    text-decoration: none;
+}
+
+.download{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+
+}
+.download .dwonload-cards{
+    display: flex;
+    gap: 20px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-left:auto ;
+    margin-right: auto;
+}
+
+footer{
+    padding: 30px;
+}
+.footer-links{
+    margin-top: 50px;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    font-size: 50px;
+}
+.footer-links ul{
+    list-style: none;
+
+}
+.footer-links ul li a{
+    text-decoration: none;
+    color: black;
+}
+@media all and (max-width: 768px) {
+   .nav-links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    background-color: white;
+    border-left:1px solid white;
+box-shadow:0px 2px 4px rgba(0,0,0, 0.1);
+    padding: 20px;
+    display: none;
+   }
+   h1{
+    font-size: 1.5em;
+   }
+
+   #menu{
+    display: block;
+    cursor: pointer;
+   }
+
+   .map-header h1{
+    font-size: 2em;
+}
+form input{
+   height: 30px;
+   width: 80%;
+}
+
+.vehicals-subconatiner{
+    /* flex-wrap: nowrap; */
+     justify-content: center;
+    align-items: center;
+}
+
+
+.sub-first-container-get-rides{
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+
+.button{
+     font-size:32px ; height: 50%; width: 80%;
+}
+
+.footer-links{
+    flex-direction: column;
+    gap: 50px;
+    font-size: 20px;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+
+
+
+.inp-asides{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.asides div p{
+   line-height: 0;
+   font-size: 0.5em;
+   /* text-wrap:none; */
+}
+
+.asides2{
+    margin-top: 50px;
+
+}
+
+.asides div{
+    /* border: 2px solid black; */
+width: 100%;
+/* padding: 50px; */
+  /* height: 100px */
+}
+
+
+.aside1 form input{
+    padding: 2px;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    height: 30px;
+}
+.asides{
+    width: 100%;
+    /* margin-top: 50px; */
+}
+.footer{
+    flex-direction: column;
+}
+}
+
+.h1{
+    margin-left:auto ;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+main{
+    padding: 10%;
+}
+/* contact us */
+.container-contact{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  
+    padding: 20px;
+    /* margin-top: 250px; */
+}
+
+.inp-asides{
+    display: flex;
+    gap: 100px;
+}
+.asides{
+    width: 50%;
+    margin-top: 50px;
+}
+.aside1 form{
+    display: flex;
+    flex-direction: column;
+   
+    gap: 20px;
+}
+.aside1 form input{
+    padding: 25px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 100%;
+}
+select{
+    padding: 25px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 100%;
+}
+.asides div{
+    width: 100%;
+}
+.asides div p{
+   line-height: 1.7;
+   font-size: 15.5px;
+}
+
+.asides2{
+    margin-top: 50px;
+}
+
+.footer{
+    color: white;
+    background-color: black;
+    display: flex;
+    
+    gap: -100px;
+    padding: 40px;
+}
+.playstore{
+    width: 40%;
+}
+footer ul{
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    padding: 20px;
+}
+footer ul li{
+    margin-top: 2px;
+}
+.footer-links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.footer-links ul li a:hover{
+    color: rgb(255, 188, 2);
+}
+.footer-links ul li{
+   font-size: 30px;
+}
